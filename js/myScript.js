@@ -1,0 +1,66 @@
+// JavaScript Document
+$('.slider-area').owlCarousel({
+    loop:true,
+    margin:10,
+	autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+		$('.product').owlCarousel({
+    loop:true,
+    margin:10,
+	autoplay:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+});
+$('.slide-video').owlCarousel({
+    loop:true,
+    margin:10,
+	autoplay:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
+$(document).ready(function(){
+  $(".hambuger-menu").click(function(){
+    $(".hambuger-menu__list").toggleClass('active');
+  });
+});
+
+ $(document).ready(function(){
+  $(".close").click(function(){
+    $(".hambuger-menu__list").removeClass('active');
+  });
+});
+$(document).ready(function(){
+    $(".list-product").click(function(){
+      $(".dropdown-menu").toggleClass('active');
+    });
+  });
